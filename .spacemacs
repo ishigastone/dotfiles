@@ -318,8 +318,8 @@ you should place your code here."
   ;; #################################################
   (global-hl-line-mode -1)
   (global-nlinum-mode)
-  (setq nlinum-format "%5d ")
-
+  (setq nlinum-format "%5d \u2502")
+  (global-set-key [f6] 'linum-mode)
   ;; #################################################
 )
 
