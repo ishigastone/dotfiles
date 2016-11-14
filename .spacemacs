@@ -317,8 +317,8 @@ you should place your code here."
 
   ;; #################################################
   (global-hl-line-mode -1)
-  (global-linum-mode)
-  (setq linum-format "%5d ")
+  (global-nlinum-mode)
+  (setq nlinum-format "%5d ")
 
   ;; #################################################
 )
