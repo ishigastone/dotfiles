@@ -305,6 +305,11 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+
+  (setq-default
+   linum-format "%4d \u2502"
+   linum-relative-format "%4s \u2502"
+     )
   )
 
 (defun dotspacemacs/user-config ()
@@ -316,10 +321,11 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
 
   ;; #################################################
-  (global-hl-line-mode -1)
-  (global-nlinum-mode)
-  (setq nlinum-format "%5d \u2502")
-  (global-set-key [f6] 'linum-mode)
+  ;;(global-hl-line-mode -1)
+  (global-linum-mode)
+  ;;(setq linum-format "%5d \u2502")
+  ;;(global-set-key [f6] 'linum-mode)
+  (setq-default dotspacemacs-line-numbers t)
   ;; #################################################
 )
 
