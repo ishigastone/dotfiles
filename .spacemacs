@@ -55,10 +55,10 @@ values."
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
-     ;;spell-checking
+     spell-checking
      syntax-checking
      version-control
-     ;;themes-megapack
+     themes-megapack
      nlinum
      )
    ;; List of additional packages that will be installed without being
@@ -141,7 +141,10 @@ values."
    dotspacemacs-themes '(
                          spacemacs-light
                          leuven
-                         zenburn)
+                         zenburn
+                         afternoon
+                         ample-zen
+                         )
 
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
